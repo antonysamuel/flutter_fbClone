@@ -1,3 +1,4 @@
+import 'package:facebook_clone/sections/statusSection.dart';
 import 'package:facebook_clone/widgets/appbarBtn.dart';
 import 'package:flutter/material.dart';
 
@@ -24,6 +25,11 @@ class Home extends StatelessWidget {
               buttonAction: () {
                 print("messenger");
               }),
+        ],
+      ),
+      body: ListView(
+        children: [
+          StatusSection(),
         ],
       ),
     );
