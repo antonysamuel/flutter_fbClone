@@ -7,6 +7,15 @@ import 'package:flutter/material.dart';
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    Widget thinDivider = Divider(
+      thickness: 1,
+      color: Colors.grey.shade300,
+    );
+    Widget thickDivider = Divider(
+      thickness: 10,
+      color: Colors.grey.shade300,
+    );
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
@@ -32,16 +41,11 @@ class Home extends StatelessWidget {
       body: ListView(
         children: [
           StatusSection(),
-          Divider(
-            thickness: 1,
-            color: Colors.grey.shade300,
-          ),
+          thinDivider,
           HeaderButtonSection(),
-          Divider(
-            thickness: 10,
-            color: Colors.grey.shade300,
-          ),
+          thickDivider,
           RoomSection(),
+          thickDivider,
         ],
       ),
       backgroundColor: Colors.white,
