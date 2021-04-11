@@ -13,6 +13,10 @@ class HeaderButtonSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Widget verticalDivider = VerticalDivider(
+      thickness: 1,
+      color: Colors.grey.shade300,
+    );
     return Container(
       height: 50,
       color: Colors.white,
@@ -20,15 +24,9 @@ class HeaderButtonSection extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           headerButton(Icons.video_call, "Live", Colors.red),
-          VerticalDivider(
-            thickness: 1,
-            color: Colors.grey.shade300,
-          ),
+          verticalDivider,
           headerButton(Icons.photo_library, "Photo", Colors.green),
-          VerticalDivider(
-            thickness: 1,
-            color: Colors.grey.shade300,
-          ),
+          verticalDivider,
           headerButton(Icons.video_call, "Room", Colors.purple)
         ],
       ),
