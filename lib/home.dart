@@ -1,6 +1,7 @@
 import 'package:facebook_clone/sections/headerButtonSection.dart';
 import 'package:facebook_clone/sections/roomSection.dart';
 import 'package:facebook_clone/sections/statusSection.dart';
+import 'package:facebook_clone/sections/sugessionSection.dart';
 import 'package:facebook_clone/widgets/circularBtn.dart';
 import 'package:facebook_clone/widgets/postCard.dart';
 import 'package:flutter/material.dart';
@@ -67,6 +68,7 @@ class Home extends StatelessWidget {
             cmtCnt: 2,
             shareCnt: 1,
           ),
+          SugessionSection(),
           PostCard(
             avatar:
                 "https://pbs.twimg.com/profile_images/1282300331129364483/cqQNY9US_400x400.jpg",
@@ -86,7 +88,8 @@ class Home extends StatelessWidget {
             name: "Babu Namboothiri",
             isVerified: false,
             time: "1 day ago",
-            postTitle: "Shoot days...",
+            postTitle:
+                "Most swatches have colors from 100 to 900 in increments of one hundred, plus the color 50. The smaller the number, the more pale the color. The greater the number, the darker the color. The accent swatches only have the values 100, 200, 400, and 700 In addition, a series of blacks and whites with common opacities are available. For example, [black54] is a pure black with 54% opacity.",
             imgUrl:
                 "https://static.toiimg.com/thumb/msid-68546530,width-1200,height-900,resizemode-4/.jpg",
             likeCnt: 2,

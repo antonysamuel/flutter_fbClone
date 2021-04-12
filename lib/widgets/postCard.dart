@@ -36,6 +36,9 @@ class PostCard extends StatelessWidget {
           PostButtonSection(),
           Divider(
             thickness: 1,
+          ),
+          Divider(
+            thickness: 10,
           )
         ],
       ),
@@ -84,6 +87,8 @@ class PostCard extends StatelessWidget {
 
   Widget titleSection() {
     return Container(
+      padding: EdgeInsets.symmetric(horizontal: 10),
+      width: double.infinity,
       child: Text(
         postTitle,
         style: TextStyle(fontSize: 16),
