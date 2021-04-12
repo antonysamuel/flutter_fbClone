@@ -1,8 +1,10 @@
 import 'package:facebook_clone/sections/headerButtonSection.dart';
 import 'package:facebook_clone/sections/roomSection.dart';
 import 'package:facebook_clone/sections/statusSection.dart';
-import 'package:facebook_clone/widgets/appbarBtn.dart';
+import 'package:facebook_clone/widgets/circularBtn.dart';
 import 'package:flutter/material.dart';
+
+import 'sections/storySection.dart';
 
 class Home extends StatelessWidget {
   @override
@@ -26,13 +28,15 @@ class Home extends StatelessWidget {
               color: Colors.blue, fontSize: 28, fontWeight: FontWeight.bold),
         ),
         actions: [
-          AppBarButton(
+          CircularButton(
               buttonIcon: Icons.search,
+              color: Colors.grey.shade300,
               buttonAction: () {
                 print("search");
               }),
-          AppBarButton(
+          CircularButton(
               buttonIcon: Icons.chat,
+              color: Colors.grey.shade300,
               buttonAction: () {
                 print("messenger");
               }),
@@ -46,6 +50,7 @@ class Home extends StatelessWidget {
           thickDivider,
           RoomSection(),
           thickDivider,
+          StorySection(),
         ],
       ),
       backgroundColor: Colors.white,
