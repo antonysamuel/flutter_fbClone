@@ -48,6 +48,8 @@ class _StoryCardState extends State<StoryCard> {
                         buttonIcon: Icons.add,
                         buttonAction: () {})
                     : Avatar(
+                        width: 35,
+                        height: 35,
                         imgUrl: widget.avatar,
                         displayStatus: false,
                         displayBorder: widget.displayBorder,
